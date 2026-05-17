@@ -5,6 +5,7 @@ import { Target, Eye, Heart, Users, Award, Clock } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Footer } from "@/components/footer"
+import Image from "next/image"
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -97,7 +98,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p className="text-pretty">
-                  ZenithTech didirikan pada tahun 2019 dengan satu tujuan sederhana: 
+                  ZenithTech didirikan pada tahun 2025 dengan satu tujuan sederhana: 
                   membantu bisnis Indonesia memiliki kehadiran digital yang profesional dan efektif.
                 </p>
                 <p className="text-pretty">
@@ -117,9 +118,9 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                <div className="w-32 h-32 rounded-2xl bg-primary flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-5xl">Z</span>
+              <div className="aspect-square rounded-2xl bg-primary from-primary/20 to-primary/5 flex items-center justify-center">
+                <div className="w-32 h-32 rounded-2xl flex items-center justify-center">
+                 <Image src={'/logo-zenith.png'} fill alt="logo-zenith"/>
                 </div>
               </div>
             </motion.div>
