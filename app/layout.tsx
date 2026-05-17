@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     ],
     apple: '/logo-zenith.png',
   },
+  verification: {
+    google: 'oR1vFDbIf-85CemIwzQupghHx1F07kWTM9UCqgzdTG8'
+  }
 }
 
 export const viewport: Viewport = {
