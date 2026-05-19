@@ -48,7 +48,7 @@ export function Navbar() {
             ? "bg-card/90 backdrop-blur-md shadow-lg border border-border" 
             : "bg-card/70 backdrop-blur-sm border border-border/50"
         )}
-        style={{ borderRadius: "9999px" }}
+        style={{ borderRadius: "25px" }}
       >
         <div className="px-4 md:px-6 py-3">
           <div className="flex items-center gap-2 md:gap-8">
@@ -111,7 +111,7 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden h-9 w-9 rounded-full"
+              className="md:hidden h-9 w-9 rounded-md"
               onClick={() => setMobileOpen(!mobileOpen)}
             >
               {mobileOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
@@ -154,7 +154,7 @@ function AnimatedMobileMenu({
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="fixed top-20 left-4 right-4 bg-card border border-border rounded-2xl shadow-xl z-50 md:hidden overflow-hidden"
+          className="fixed top-20 left-4 right-4 bg-card border border-border rounded-md shadow-xl z-50 md:hidden overflow-hidden"
         >
           <div className="p-4 space-y-2">
             {navItems.map((item) => {
@@ -165,7 +165,7 @@ function AnimatedMobileMenu({
                   <motion.div
                     whileTap={{ scale: 0.98 }}
                     className={cn(
-                      "px-4 py-3 rounded-xl text-sm font-medium transition-colors",
+                      "px-4 py-3 rounded-md text-sm font-medium transition-colors",
                       isActive
                         ? "bg-primary text-primary-foreground"
                         : "text-muted-foreground hover:text-foreground hover:bg-secondary"
