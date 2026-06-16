@@ -121,35 +121,8 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-16 px-6 bg-secondary/30">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
-        >
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">2+</div>
-            <div className="text-muted-foreground">Projects Delivered</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">2+</div>
-            <div className="text-muted-foreground">Happy Clients</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">2+</div>
-            <div className="text-muted-foreground">Industries Served</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-primary mb-2">98%</div>
-            <div className="text-muted-foreground">Client Satisfaction</div>
-          </div>
-        </motion.div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-zinc-950">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
